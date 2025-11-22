@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Syauqi Abdul Aziz — Portofolio</title>
+  <meta name="description" content="Portofolio resmi Syauqi Abdul Aziz — Mahasiswa Sistem Informasi, fokus Web Development & Sistem Informasi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <!-- FIXED NAVBAR -->
+  <header class="site-header" role="banner" aria-label="Header utama">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">SA</div>
+        <div class="brand-text">
+          <span class="name">Syauqi Abdul Aziz</span>
+          <span class="role">Mahasiswa Sistem Informasi</span>
+        </div>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Navigasi utama">
+        <ul id="primary-menu" class="nav-list" role="menubar">
+          <li role="none"><a role="menuitem" data-route="/" href="/">Home</a></li>
+          <li role="none"><a role="menuitem" data-route="/about" href="/about">About</a></li>
+          <li role="none"><a role="menuitem" data-route="/skills" href="/skills">Skills</a></li>
+          <li role="none"><a role="menuitem" data-route="/projects" href="/projects">Projects</a></li>
+          <li role="none"><a role="menuitem" data-route="/experience" href="/experience">Experience</a></li>
+          <li role="none"><a role="menuitem" data-route="/education" href="/education">Education</a></li>
+          <li role="none"><a role="menuitem" data-route="/contact" href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-pressed="true" aria-label="Toggle tema gelap/terang">🌓</button>
+        <a class="cta cta-outline" id="download-cv" href="#" role="button">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" class="main-content container" aria-live="polite">
+    <!-- HOME (komposit: menampilkan semua section secara ringkas di beranda) -->
+    <section id="home" class="page" data-route="/" aria-labelledby="home-title">
+      <div class="hero section card reveal">
+        <div class="hero-grid">
+          <div class="hero-left">
+            <div class="avatar" aria-hidden="true">
+              <svg viewBox="0 0 120 120" class="avatar-svg" role="img" aria-hidden="true">
+                <defs><linearGradient id="g-home" x1="0" x2="1"><stop offset="0" stop-color="var(--accent-primary)"/><stop offset="1" stop-color="#6C63FF"/></linearGradient></defs>
+                <rect width="120" height="120" rx="20" fill="var(--surface-card)" />
+                <circle cx="60" cy="44" r="22" fill="url(#g-home)"/>
+                <rect x="20" y="78" width="80" height="20" rx="10" fill="rgba(255,255,255,0.06)"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <h1 id="home-title" class="title">Syauqi Abdul Aziz</h1>
+            <p class="subtitle">Mahasiswa Sistem Informasi — Universitas Komputama Majenang</p>
+            <p class="tagline">Saya membangun solusi web sederhana dan handal untuk UMKM. Fokus: web development, sistem informasi, dan basis data.</p>
+
+            <div class="hero-ctas">
+              <a class="cta" href="/projects" data-route="/projects">Lihat Proyek</a>
+              <a class="cta cta-outline" href="/contact" data-route="/contact">Hubungi Saya</a>
+              <button class="tiny" id="open-intro">Tentang Singkat</button>
+            </div>
+
+            <ul class="meta-list">
+              <li><strong>Waktu:</strong> Sore (14.00–22.00) — Staff Operasional</li>
+              <li><strong>Target:</strong> Web Developer / System Analyst / Solusi UMKM</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="quick-stats">
+          <div class="stat"><strong>3+</strong><span>Proyek utama</span></div>
+          <div class="stat"><strong>HTML · CSS · JS</strong><span>Stack inti</span></div>
+          <div class="stat"><strong>PHP · MySQL</strong><span>Backend dasar</span></div>
+        </div>
+      </div>
+
+      <!-- --- HOME: ABOUT (ringkasan) --- -->
+      <section id="home-about" class="card section reveal" aria-labelledby="home-about-title">
+        <h2 id="home-about-title">About — Ringkasan</h2>
+        <p>Saya, Syauqi Abdul Aziz — mahasiswa Sistem Informasi di Universitas Komputama Majenang. Aktif belajar pengembangan web, basis data, dan antarmuka sederhana. Bekerja part-time melayani operasional warung yang mengasah manajemen waktu dan ketelitian.</p>
+        <p class="muted">Ingin menjadi Web Developer / System Analyst yang membantu UMKM berkembang dengan solusi praktis.</p>
+        <a class="tiny" href="/about" data-route="/about">Baca selengkapnya</a>
+      </section>
+
+      <!-- --- HOME: SKILLS (ringkasan) --- -->
+      <section id="home-skills" class="card section reveal" aria-labelledby="home-skills-title">
+        <h2 id="home-skills-title">Skills — Ringkasan</h2>
+        <div class="skill-row">
+          <div class="chip">HTML</div>
+          <div class="chip">CSS</div>
+          <div class="chip">JavaScript</div>
+          <div class="chip">PHP (dasar)</div>
+          <div class="chip">MySQL</div>
+          <div class="chip">Git</div>
+        </div>
+        <a class="tiny" href="/skills" data-route="/skills">Lihat detail skill</a>
+      </section>
+
+      <!-- --- HOME: PROJECTS (ringkasan) --- -->
+      <section id="home-projects" class="card section reveal" aria-labelledby="home-projects-title">
+        <h2 id="home-projects-title">Projects — Ringkasan</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="placeholder-img">Sistem Manajemen Toko Sembako</div>
+            <div class="project-body">
+              <h3>Sistem Manajemen Toko Sembako</h3>
+              <p class="project-desc">Sistem PHP/MySQL untuk stok & penjualan.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="placeholder-img">Portofolio Personal</div>
+            <div class="project-body">
+              <h3>Portofolio Personal</h3>
+              <p class="project-desc">Front-end responsif & minimalis.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="placeholder-img">Aplikasi Kasir Sederhana</div>
+            <div class="project-body">
+              <h3>Aplikasi Kasir Sederhana</h3>
+              <p class="project-desc">JS + LocalStorage untuk usaha kecil.</p>
+            </article>
+        </div>
+        <a class="tiny" href="/projects" data-route="/projects">Lihat semua proyek</a>
+      </section>
+
+      <!-- --- HOME: EXPERIENCE (ringkasan) --- -->
+      <section id="home-experience" class="card section reveal" aria-labelledby="home-exp-title">
+        <h2 id="home-exp-title">Experience — Ringkasan</h2>
+        <p><strong>Warung Rembulan — Staff Operasional</strong> (14.00–22.00). Bertugas melayani pelanggan, mencatat transaksi, mengelola stok, dan menjaga ketelitian data.</p>
+        <a class="tiny" href="/experience" data-route="/experience">Detail pengalaman</a>
+      </section>
+
+      <!-- --- HOME: EDUCATION (ringkasan) --- -->
+      <section id="home-education" class="card section reveal" aria-labelledby="home-edu-title">
+        <h2 id="home-edu-title">Education — Ringkasan</h2>
+        <p><strong>Universitas Komputama Majenang — Sistem Informasi</strong> — Mata kuliah relevan: Basis Data, Pemrograman Web, Matematika Diskrit, Analisis Sistem, RPL.</p>
+        <a class="tiny" href="/education" data-route="/education">Lihat detail pendidikan</a>
+      </section>
+
+      <!-- --- HOME: CONTACT (ringkasan) --- -->
+      <section id="home-contact" class="card section reveal" aria-labelledby="home-contact-title">
+        <h2 id="home-contact-title">Contact — Ringkasan</h2>
+        <p>Email: <a href="mailto:syauqi@example.com">syauqi@example.com</a></p>
+        <p>Lokasi: Majenang, Cilacap</p>
+        <a class="tiny" href="/contact" data-route="/contact">Buka halaman kontak</a>
+      </section>
+    </section>
+
+    <!-- -------------------------------------------------------------------
+         SEPARATE PAGES: setiap menu punya laman sendiri (muncul saat route masing2)
+         ------------------------------------------------------------------- -->
+
+    <section id="about" class="page" data-route="/about" aria-labelledby="about-title" hidden>
+      <header class="section-header">
+        <h2 id="about-title">About Me</h2>
+        <p class="section-sub">Latar belakang, pengalaman, dan pendekatan kerja.</p>
+      </header>
+
+      <div class="about-grid">
+        <article class="card reveal">
+          <h3>Profil</h3>
+          <p>Saya mahasiswa Sistem Informasi yang fokus pada Web Development dan Sistem Informasi. Di samping kuliah saya bekerja part-time sehingga terbiasa manajemen waktu dan disiplin.</p>
+          <ul class="chip-list">
+            <li class="chip">Web Development</li>
+            <li class="chip">Database</li>
+            <li class="chip">UI sederhana</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>Timeline Singkat</h3>
+          <ol class="timeline">
+            <li><strong>2022</strong> — Memulai jurusan Sistem Informasi</li>
+            <li><strong>2023</strong> — Membuat aplikasi kasir berbasis browser</li>
+            <li><strong>2024</strong> — Sistem manajemen toko sembako (PHP/MySQL)</li>
+          </ol>
+        </article>
+
+        <article class="card reveal">
+          <h3>Tujuan Karier</h3>
+          <p>Mengembangkan solusi digital untuk UMKM dan bekerja sebagai Web Developer / System Analyst.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="page" data-route="/skills" aria-labelledby="skills-title" hidden>
+      <header class="section-header">
+        <h2 id="skills-title">Skills</h2>
+        <p class="section-sub">Keahlian teknis & profesional, terukur.</p>
+      </header>
+
+      <div class="skills-panel">
+        <div class="card reveal">
+          <h3>Technical</h3>
+          <ul class="skill-bars">
+            <li><span>HTML</span><div class="bar"><div class="fill" data-fill="95"></div></div></li>
+            <li><span>CSS</span><div class="bar"><div class="fill" data-fill="90"></div></div></li>
+            <li><span>JavaScript</span><div class="bar"><div class="fill" data-fill="80"></div></div></li>
+            <li><span>PHP (dasar)</span><div class="bar"><div class="fill" data-fill="65"></div></div></li>
+            <li><span>MySQL</span><div class="bar"><div class="fill" data-fill="70"></div></div></li>
+            <li><span>Git</span><div class="bar"><div class="fill" data-fill="75"></div></div></li>
+          </ul>
+        </div>
+
+        <div class="card reveal">
+          <h3>Soft Skills</h3>
+          <ul class="bullet-list">
+            <li>Manajemen waktu (kuliah + kerja)</li>
+            <li>Problem solving</li>
+            <li>Disiplin</li>
+            <li>Komunikasi & adaptasi cepat</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="page" data-route="/projects" aria-labelledby="projects-title" hidden>
+      <header class="section-header">
+        <h2 id="projects-title">Projects</h2>
+        <p class="section-sub">Portofolio nyata — klik untuk detail.</p>
+      </header>
+
+      <div class="project-controls reveal">
+        <div class="filters" role="tablist" aria-label="Filter proyek">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="database">Database</button>
+          <button class="filter-btn" data-filter="ui">UI</button>
+        </div>
+      </div>
+
+      <div class="projects-grid reveal" id="projects-grid">
+        <article class="project-card card" data-category="database web" aria-labelledby="p1-title">
+          <div class="project-media"><div class="placeholder-img">Sistem Manajemen Toko Sembako</div></div>
+          <div class="project-body">
+            <h3 id="p1-title">Sistem Manajemen Toko Sembako</h3>
+            <p class="project-desc">Manajemen stok, penjualan, dan laporan harian untuk toko kecil. Prioritas: kemudahan kasir.</p>
+            <p class="project-tech">PHP · MySQL · HTML · CSS</p>
+            <div class="project-actions">
+              <a class="tiny" href="#">Live Demo</a>
+              <a class="tiny" href="#">Source Code</a>
+              <button class="tiny details-btn" data-project="p1">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card card" data-category="web ui" aria-labelledby="p2-title">
+          <div class="project-media"><div class="placeholder-img">Portofolio Personal</div></div>
+          <div class="project-body">
+            <h3 id="p2-title">Portofolio Personal</h3>
+            <p class="project-desc">Front-end responsif, minimalis, dan performa optimal untuk menampilkan karya.</p>
+            <p class="project-tech">HTML · CSS · JavaScript</p>
+            <div class="project-actions">
+              <a class="tiny" href="#">Live Demo</a>
+              <a class="tiny" href="#">Source Code</a>
+              <button class="tiny details-btn" data-project="p2">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card card" data-category="web ui" aria-labelledby="p3-title">
+          <div class="project-media"><div class="placeholder-img">Aplikasi Kasir Sederhana</div></div>
+          <div class="project-body">
+            <h3 id="p3-title">Aplikasi Kasir Sederhana</h3>
+            <p class="project-desc">Aplikasi kasir berbasis browser menggunakan JavaScript dan LocalStorage untuk menyimpan transaksi.</p>
+            <p class="project-tech">JavaScript · LocalStorage · HTML · CSS</p>
+            <div class="project-actions">
+              <a class="tiny" href="#">Live Demo</a>
+              <a class="tiny" href="#">Source Code</a>
+              <button class="tiny details-btn" data-project="p3">Details</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="page" data-route="/experience" aria-labelledby="exp-title" hidden>
+      <header class="section-header">
+        <h2 id="exp-title">Experience</h2>
+        <p class="section-sub">Peran praktis & tanggung jawab</p>
+      </header>
+
+      <div class="card reveal">
+        <h3>Warung Rembulan — Staff Operasional</h3>
+        <p class="muted">14.00–22.00 (Part-time)</p>
+        <ul class="bullet-list">
+          <li>Melayani pelanggan secara langsung, menjaga kepuasan.</li>
+          <li>Mencatat transaksi harian & menyusun ringkasan penjualan.</li>
+          <li>Mengelola stok, memantau barang kritis, dan proses reorder.</li>
+          <li>Memastikan akurasi data untuk input ke sistem sederhana.</li>
+        </ul>
+
+        <div class="kpis">
+          <div><strong>Waktu respon</strong><span>~1 menit rata-rata</span></div>
+          <div><strong>Akurasi catatan</strong><span>>98%</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="page" data-route="/education" aria-labelledby="edu-title" hidden>
+      <header class="section-header">
+        <h2 id="edu-title">Education</h2>
+        <p class="section-sub">Pendidikan & mata kuliah relevan</p>
+      </header>
+
+      <div class="card reveal">
+        <h3>Universitas Komputama Majenang — Sistem Informasi</h3>
+        <p class="muted">Tahun masuk — sekarang</p>
+        <p><strong>Mata kuliah relevan:</strong> Basis Data, Pemrograman Web, Matematika Diskrit, Analisis Sistem, Rekayasa Perangkat Lunak (RPL).</p>
+      </div>
+    </section>
+
+    <section id="contact" class="page" data-route="/contact" aria-labelledby="contact-title" hidden>
+      <header class="section-header">
+        <h2 id="contact-title">Contact</h2>
+        <p class="section-sub">Mari diskusikan peluang kolaborasi</p>
+      </header>
+
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form card" novalidate>
+          <div class="form-row"><label for="name">Nama</label><input id="name" name="name" type="text" required minlength="2" aria-required="true" /><div class="field-error" id="error-name" aria-live="polite"></div></div>
+          <div class="form-row"><label for="email">Email</label><input id="email" name="email" type="email" required aria-required="true" /><div class="field-error" id="error-email" aria-live="polite"></div></div>
+          <div class="form-row"><label for="message">Pesan</label><textarea id="message" name="message" rows="6" required minlength="10" aria-required="true"></textarea><div class="field-error" id="error-message" aria-live="polite"></div></div>
+          <div class="form-actions"><button type="submit" class="cta">Kirim Pesan</button><button type="reset" class="tiny">Reset</button></div>
+          <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+        </form>
+
+        <aside class="contact-info card">
+          <h3>Hubungi saya</h3>
+          <p>Email: <a href="mailto:syauqi@example.com">syauqi@example.com</a></p>
+          <p>Lokasi: Majenang, Cilacap (Indonesia)</p>
+
+          <div class="map-wrapper" aria-hidden="false">
+            <iframe loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=108.90%2C-7.60%2C109.30%2C-7.30&amp;layer=mapnik&amp;marker=-7.45%2C109.12" style="border:0;width:100%;height:260px;border-radius:8px;"></iframe>
+            <small><a href="https://www.openstreetmap.org/?mlat=-7.45&amp;mlon=109.12#map=12/-7.45/109.12" target="_blank" rel="noopener">Lihat peta lebih besar</a></small>
+          </div>
+
+          <div class="socials">
+            <a href="#" aria-label="GitHub" title="GitHub">GitHub</a>
+            <a href="#" aria-label="LinkedIn" title="LinkedIn">LinkedIn</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Syauqi Abdul Aziz. Semua hak dilindungi.</p>
+      <div class="footer-links"><a href="#" aria-label="GitHub">GitHub</a><a href="#" aria-label="LinkedIn">LinkedIn</a></div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal (dipakai oleh halaman projects) -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content card">
+      <button class="modal-close" aria-label="Tutup">&times;</button>
+      <h3 id="modal-title">Project Title</h3>
+      <p id="modal-desc">Deskripsi singkat proyek akan tampil di sini.</p>
+      <p id="modal-tech"><strong>Teknologi:</strong> ...</p>
+      <div class="modal-actions"><a class="tiny" id="modal-live" href="#" target="_blank">Live Demo</a><a class="tiny" id="modal-src" href="#" target="_blank">Source Code</a></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
